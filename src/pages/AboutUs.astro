@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="About Us - InvernaTec">
+  <Header />
+  <main class="min-h-screen flex">
+    <div class="w-full flex flex-col items-start p-20 gap-8">
+      <h1 class="italic text-white text-4xl">Who are we?</h1>
+      <p class="text-white">
+        We are a small company of integral solutions in agriculture, innovating
+        and innovating and more than 5,000 lines of code written. We design,
+        develop, manufacture and build integral projects in protected
+        agriculture. protected agriculture.
+      </p>
+      <p class="text-white">
+        At XYZ company, we are more than a big, nameless corporation. We care
+        about all of our workers, from the staff whose years of experience have
+        helped build this company, to our newest members bringing their energy
+        and fresh new ideas. This planet is all we have. We must all do our best
+        to protect it.
+      </p>
+      <h1 class="italic text-white text-4xl">Misión</h1>
+      <p class="text-white">
+        To offer customers the lowest possible prices, obtaining the widest
+        selection and availability in the quickest and most the widest selection
+        and availability in the quickest and most convenient way possible
+      </p>
+    </div>
+    <div class="w-4/6">
+      <img src="/public/esp.webp" alt="" height="2" />
+    </div>
+  </main>
+  <section
+    class="min-h-screen bg-white flex justify-center flex-col items-center gap-8"
+  >
+    <h3 class="text-5xl mb-10">We are ready to help you!</h3>
+    <div class="flex justify-start gap-10">
+      <div class="w-full flex flex-col gap-2">
+        <h4 class="text-2xl">Learn more about the project</h4>
+        <p>We are ready to help you, leave us your details.</p>
+      </div>
+      <div class="w-full flex flex-col gap-2">
+        <h4 class="text-2xl">Purchase our products</h4>
+        <p>Find all the accessories you need for your greenhouse.</p>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</Layout>

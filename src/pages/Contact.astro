@@ -1,0 +1,63 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact - InvernaTec">
+  <Header />
+  <main class="min-h-screen">
+    <div class="flex flex-col justify-center items-center my-10 mb-8">
+      <h1 class="text-white text-2xl italic">Contáctanos</h1>
+      <p class="text-white">
+        Discuta de su proyecto con alguno de nuestros expertos. Estará en medida
+        de asesorarlo y escoger la solución a sus necesidades.
+      </p>
+    </div>
+    <div class="flex p-10 gap-8 text-white">
+      <div class="w-2/4">
+        <form class="flex flex-col gap-2" id="formulario">
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" name="nombre" class="text-black" />
+
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" class="text-black" />
+
+          <label for="telefono">Teléfono: </label>
+          <input type="text" id="telefono" name="telefono" class="text-black" />
+
+          <label for="mensaje">Mensaje: </label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            rows="10"
+            cols="50"
+            class="text-black"></textarea>
+          <input
+            type="submit"
+            id="enviar-form"
+            value="Enviar"
+            class="bg-lime-500 py-2 rounded-lg mt-2 hover:bg-lime-700 cursor-pointer"
+          />
+        </form>
+      </div>
+      <div class="w-2/4">
+        <h3 class="italic text-2xl mb-2">Nuestras coordenadas</h3>
+        <p>
+          Póngase en contacto con nosotros a través de los medios de
+          comunicación, que puede encontrar a continuación, y estaremos
+          encantados de responderle lo antes posible.
+        </p>
+        <h3 class="italic text-2xl mb-2 mt-8">OFICINA CENTRAL</h3>
+        <p>
+          Teléfono: 1-450-756-1041
+          <br />Sin Costo (México/MEX) : 833-427-6647
+          <br />Fax : 1-450-756-8389
+          <br />Correo electrónico : info@invernatec.com
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <script src="/src/utils/form.js"></script>
+</Layout>
