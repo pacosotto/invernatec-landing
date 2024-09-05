@@ -6,7 +6,9 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="InvernaTec - Invernadero de Alta Tecnología">
   <Header />
-  <main class="flex justify-center items-center flex-col min-h-screen relative">
+  <main
+    class="flex text-center justify-center items-center flex-col h-[40rem] lg:min-h-screen relative"
+  >
     <h1 class="text-white italic text-6xl font-bold drop-shadow-lg">
       Your high-tech greenhouse
     </h1>
@@ -17,10 +19,10 @@ import Footer from "../components/Footer.astro";
     <img
       src="/svgs/sprout-svgrepo-com.svg"
       alt=""
-      class="absolute -z-10 xl:-bottom-52 2xl:bottom-0"
+      class="absolute -z-10 xl:-bottom-52 2xl:bottom-0 bottom-0"
     />
   </main>
-  <section class="min-h-screen bg-white flex flex-row">
+  <section class="min-h-screen bg-white flex flex-col lg:flex-row">
     <div
       class="w-full flex flex-col justify-center items-center text-left text-gray-800 bg-[#ecca9d] p-16 gap-8"
     >
@@ -38,7 +40,7 @@ import Footer from "../components/Footer.astro";
       <img src="/concurso.webp" alt="" class="h-full object-cover" />
     </div>
   </section>
-  <section class="min-h-screen bg-white flex">
+  <section class="min-h-screen bg-white flex flex-col lg:flex-row">
     <div
       class="w-full p-10 flex justify-center items-center border-r-2 my-14 border-gray-40"
     >

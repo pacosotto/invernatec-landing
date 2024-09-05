@@ -2,13 +2,25 @@
 
 ---
 
-<div class="flex bg-white items-center justify-around">
-  <div class="flex items-center gap-2">
-    <a href="/">
+<div class="flex flex-col lg:flex-row bg-white items-center justify-around">
+  <div class="flex flex-col lg:flex-row items-center gap-2 lg:p-0 p-4">
+    <a href="/" class="mb-4 lg:mb-0">
       <img src="/logo.webp" alt="Logo-InvernaTec" width="50" />
     </a>
-    <nav class="p-4 flex justify-between gap-10">
-      <ul class="flex gap-4 text-gray-600">
+
+    <!-- Botón de menú para dispositivos móviles -->
+    <button
+      id="menu-btn"
+      class="lg:hidden bg-gray-500 text-white px-4 py-2 rounded-md"
+    >
+      Menú
+    </button>
+
+    <nav
+      id="menu"
+      class="p-4 flex-col lg:flex-row justify-between gap-10 hidden lg:block"
+    >
+      <ul class="flex flex-col items-center lg:flex-row gap-4 text-gray-600">
         <li class="hover:text-gray-400"><a href="/">Home</a></li>
         <li class="hover:text-gray-400"><a href="/AboutUs">About us</a></li>
         <li class="hover:text-gray-400"><a href="/Contact">Contact</a></li>
@@ -16,7 +28,9 @@
       </ul>
     </nav>
   </div>
-  <div class="flex gap-4">
+  <div
+    class="hidden lg:block flex-col items-center lg:flex-row gap-4 lg:mb-0 mb-4"
+  >
     <a
       class="bg-white-400 py-2 px-8 rounded-2xl text-black border border-black hover:bg-green-200"
       href="http://localhost:5173/">Sign In</a
@@ -27,3 +41,13 @@
     >
   </div>
 </div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  menuBtn.addEventListener("click", () => {
+    // Toggle the hidden class to show/hide the menu
+    menu.classList.toggle("hidden");
+  });
+</script>
